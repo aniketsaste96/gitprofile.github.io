@@ -1,0 +1,100 @@
+/* use background colour */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: white;
+}
+
+.image {
+  float: left;
+  overflow: auto;
+  margin-top: 27px;
+  margin-left: 39px;
+
+  width: 50px;
+  height: 50px;
+}
+
+.conatainer {
+  background-color: rgb(202, 210, 197);
+  /* height: 700px; */
+  /* width: 890px; */
+  display: grid;
+
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(16, 1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.item {
+  background-color: rgb(53, 53, 53);
+  /*   height: 122px;
+  width: 122px; */
+}
+
+.item1 {
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  grid-column: 1 / span 18;
+  grid-row: 1 / span 2;
+  text-align: center;
+  padding: 0 !important;
+  background-color: rgb(47, 61, 70);
+  position: block-inline;
+}
+.head {
+  display: inline-block;
+  margin-top: 36px;
+  font-family: "arial";
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+input {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 15px;
+}
+
+.item2 {
+  grid-column: 2 / span 4;
+  grid-row: 4 / span 12;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.item3 {
+  grid-column: 8 / span 6;
+  grid-row: 4 / span 1;
+  border-radius: 10px;
+}
+
+.item4 {
+  grid-column: 7 / span 2;
+  grid-row: 7 / span 3;
+  border-radius: 12px;
+}
+
+.item5 {
+  grid-column: 10 / span 2;
+  grid-row: 7 / span 3;
+  border-radius: 12px;
+}
+
+.item6 {
+  grid-column: 13 / span 2;
+  grid-row: 7 / span 3;
+  border-radius: 12px;
+}
+
+.item7 {
+  grid-column: 7 / span 8;
+  grid-row: 12 / span 4;
+  border-radius: 12px;
+}
